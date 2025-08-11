@@ -2,6 +2,7 @@
  * The MIT License (MIT)
  *
  * Copyright (c) 2019 hathach for Adafruit Industries
+ * Copyright (c) 2025 DeviceFuture Authors and Contributors
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -110,7 +111,9 @@ static struct lfs_config _InternalFSConfig =
   .prog_size = LFS_BLOCK_SIZE,
   .block_size = LFS_BLOCK_SIZE,
   .block_count = LFS_FLASH_TOTAL_SIZE / LFS_BLOCK_SIZE,
-  .lookahead = 128,
+  .cache_size = 16,
+  .lookahead_size = 16,
+  .block_cycles = 500,
 
   .read_buffer = NULL,
   .prog_buffer = NULL,
