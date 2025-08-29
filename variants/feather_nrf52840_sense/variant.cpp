@@ -77,19 +77,19 @@ const uint32_t g_ADigitalPinMap[] =
 
   // The remaining pins are not usable:
   // The following pins were never listed as they were considered unusable
-  // 18,      // P0.18 is RESET (attached to switch)
+  18,      // P0.18 is RESET (attached to switch)
   // 
   // The remaining pins are not connected (per schematic)
-  // 33,      // P1.01 is not connected per schematic
-  // 35,      // P1.03 is not connected per schematic
-  // 36,      // P1.04 is not connected per schematic
-  // 37,      // P1.05 is not connected per schematic
-  // 38,      // P1.06 is not connected per schematic
-  // 39,      // P1.07 is not connected per schematic
-  // 43,      // P1.11 is not connected per schematic
-  // 44,      // P1.12 is not connected per schematic
-  // 45,      // P1.13 is not connected per schematic
-  // 46,      // P1.14 is not connected per schematic
+  33,      // P1.01 is not connected per schematic
+  35,      // P1.03 is not connected per schematic
+  36,      // P1.04 is not connected per schematic
+  37,      // P1.05 is not connected per schematic
+  38,      // P1.06 is not connected per schematic
+  39,      // P1.07 is not connected per schematic
+  43,      // P1.11 is not connected per schematic
+  44,      // P1.12 is not connected per schematic
+  45,      // P1.13 is not connected per schematic
+  46,      // P1.14 is not connected per schematic
 };
 
 void initVariant()
